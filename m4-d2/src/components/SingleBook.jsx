@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
+import CommentArea from './CommentArea'
 
 class SingleBook extends React.Component {
 
@@ -9,7 +10,7 @@ class SingleBook extends React.Component {
 
   render() {
     return (
-
+      <>
         <Card
          onClick={() => {
           this.setState({selected: !this.state.selected})
@@ -22,6 +23,10 @@ class SingleBook extends React.Component {
           </Card.Body>
         </Card>
 
+        {
+          this.state.selected && <CommentArea asin={this.props.book.asin}/>
+        }
+      </>
     )
   }
 }
