@@ -6,6 +6,7 @@ import MyNavbar from './components/MyNavbar'
 import MyFooter from './components/MyFooter'
 import Welcome from'./components/Welcome'
 import LatestRelease from './components/LatestRelease'
+import WarningSign from './components/WarningSign'
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <MyNavbar />
       <Welcome />
-      <h2>Latest Release</h2>
+      <WarningSign string="Latest Release"/>
       <LatestRelease />
 
       <MyFooter />
