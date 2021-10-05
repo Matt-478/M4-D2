@@ -7,6 +7,7 @@ import MyFooter from './components/MyFooter'
 import Welcome from'./components/Welcome'
 import LatestRelease from './components/LatestRelease'
 import WarningSign from './components/WarningSign'
+import BadgeComponent from './components/MyBadge'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <MyNavbar />
       <Welcome />
       <WarningSign string="Latest Release"/>
+      <BadgeComponent variant="danger" text="New"/>
       <LatestRelease />
 
       <MyFooter />
