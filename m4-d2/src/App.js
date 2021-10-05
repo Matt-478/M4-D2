@@ -8,8 +8,9 @@ import Welcome from'./components/Welcome'
 import LatestRelease from './components/LatestRelease'
 import WarningSign from './components/WarningSign'
 import BadgeComponent from './components/MyBadge'
-import SingleBook from './components/SingleBook'
 import FantasyBook from './fantasy.json'
+import BookList from './components/BookList'
+import SingleBook from './components/SingleBook'
 
 
 function App() {
@@ -20,8 +21,11 @@ function App() {
       <WarningSign string="Latest Release"/>
       <BadgeComponent variant="danger" text="New"/>
       <LatestRelease />
+      <SingleBook book={FantasyBook[0]}/>
+      {console.log(FantasyBook)}
 
-      <SingleBook books={FantasyBook[0]}/>
+      <BookList books={FantasyBook} />
+
 
       <MyFooter />
     </div>
