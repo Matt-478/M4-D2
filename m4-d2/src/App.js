@@ -22,8 +22,6 @@ function App() {
       <BadgeComponent variant="danger" text="New"/>
       <LatestRelease />
       <SingleBook book={FantasyBook[0]}/>
-      {console.log(FantasyBook)}
-
       <BookList books={FantasyBook} />
 
 
